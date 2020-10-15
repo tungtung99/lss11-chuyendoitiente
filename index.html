@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <title>Chuyển đổi tiền tệ</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: coral;">Bảng chuyển đổi tiền tệ</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <p><b>Amount</b></p>
+                <input type="text" size="30" style="height: 30px;" id="inputtiente">
+            </div>
+            <div class="col-sm-3">
+                <p><b>From Currency</b></p>
+                <select name="" id="" onchange="fromonchange(this)">
+                    <option value="">--chọn--</option>
+                    <option value="vietnam">VietNam</option>
+                    <option value="usd">USD</option>
+                    <option>Rúp Nga</option>
+                    <option>Euro</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <p><b>To Currency</b></p>
+                <select name="" id="" onchange="toonchange(this)">
+                    <option value="">--chọn--</option>
+                    <option value="vietnam">VietNam</option>
+                    <option value="usd">USD</option>
+                    <option>Rúp Nga</option>
+                    <option>Euro</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <button onclick="tinhtoan()">Convert</button>
+            </div>
+        </div>
+        <br>
+        <h5 style="color: blue;" id="show_message"></h5>
+    </div>
+
+</body>
+
+</html>
