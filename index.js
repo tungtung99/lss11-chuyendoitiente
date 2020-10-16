@@ -3,6 +3,15 @@ function tinhtoan(){
     let tiennhap=document.getElementById("inputtiente").value
     let tientruockhidoi=document.getElementById("money1").value
     let tiensaukhidoi=document.getElementById("money2").value
-    let tienxuatra=(tiennhap/tientruockhidoi)*tiensaukhidoi
-    message.innerHTML="Result: "+tienxuatra
+    if(tiennhap =='')
+    {
+        alert("Mời bạn nhập số tiền cần đổi")
+    }
+    else if(tiensaukhidoi=='' || tiensaukhidoi==''){
+        alert("Mời bạn chọn")
+    }
+    else{
+        let tienxuatra=(tiennhap/tientruockhidoi)*tiensaukhidoi
+        message.innerHTML="Result: "+tienxuatra
+    }
 }
